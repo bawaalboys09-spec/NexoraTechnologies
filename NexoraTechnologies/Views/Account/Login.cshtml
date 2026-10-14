@@ -1,0 +1,6 @@
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Sign in";
+}
+<section class="section auth-section"><div class="auth-card"><div class="eyebrow">WELCOME BACK</div><h1>Sign in to Nexora</h1><p class="muted">Access your client portal or admin workspace.</p><form asp-action="Login" method="post"><input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" /><div asp-validation-summary="ModelOnly" class="validation-summary"></div><div class="form-field"><label asp-for="Email"></label><input asp-for="Email" autocomplete="username" /><span asp-validation-for="Email"></span></div><div class="form-field"><label asp-for="Password"></label><input asp-for="Password" autocomplete="current-password" /><span asp-validation-for="Password"></span></div><label class="check-field"><input asp-for="RememberMe" /><span>Remember me on this device</span></label><button class="button button-primary button-wide" type="submit">Sign in</button></form><p class="auth-bottom">New to Nexora? <a asp-action="Register">Create a client account</a></p></div></section>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

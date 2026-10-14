@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.EntryPointFilePath = 
+build_property.RootNamespace = NexoraTechnologies
+build_property.RootNamespace = NexoraTechnologies
+build_property.ProjectDir = C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Admin/Enquiries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW5xdWlyaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Admin/Projects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Admin/Tickets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGlja2V0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/ClientPortal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50UG9ydGFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Client/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Contact/ThankYou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxUaGFua1lvdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Home/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Home/Portfolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3J0Zm9saW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Home/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Services/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Services/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abhim/OneDrive/Desktop/All software file/1 - Nexora Technologies/1. Zeep files/1- file/NexoraTechnologies_ASPNETCore_Starter/NexoraTechnologies/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

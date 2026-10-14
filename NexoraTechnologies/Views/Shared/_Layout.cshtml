@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Nexora Technologies</title>
+    <meta name="description" content="@ViewData["MetaDescription"]" />
+    <link rel="icon" href="~/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a class="brand" asp-controller="Home" asp-action="Index" aria-label="Nexora Technologies home">
+            <span class="brand-mark">N</span><span>NEXORA <small>TECHNOLOGIES</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Services" asp-action="Index">Services</a>
+            <a asp-controller="Home" asp-action="About">About</a>
+            <a asp-controller="Contact" asp-action="Index">Contact</a>
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    <a asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                }
+                else if (User.IsInRole("Client"))
+                {
+                    <a asp-controller="ClientPortal" asp-action="Index">Client Portal</a>
+                }
+                <form asp-controller="Account" asp-action="Logout" method="post" class="nav-logout">
+                    <button class="button button-ghost button-small" type="submit">Sign out</button>
+                </form>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Login">Sign in</a>
+                <a class="button button-primary button-small" asp-controller="Account" asp-action="Register">Client sign up</a>
+            }
+        </nav>
+    </div>
+</header>
+<main>
+    @if (TempData["SuccessMessage"] is string message)
+    {
+        <div class="container"><div class="alert alert-success" role="status">@message</div></div>
+    }
+    @RenderBody()
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand brand-footer" asp-controller="Home" asp-action="Index"><span class="brand-mark">N</span><span>NEXORA <small>TECHNOLOGIES</small></span></a>
+            <p>Ideas Into Innovation.</p>
+            <p class="muted">Websites, software, mobile apps, ERP and AI-enabled solutions.</p>
+        </div>
+        <div><strong>Explore</strong><a asp-controller="Services" asp-action="Index">Services</a><a asp-controller="Home" asp-action="About">About us</a><a asp-controller="Contact" asp-action="Index">Contact</a></div>
+        <div><strong>Account</strong><a asp-controller="Account" asp-action="Login">Sign in</a><a asp-controller="Account" asp-action="Register">Client portal access</a><a asp-controller="Home" asp-action="Privacy">Privacy</a></div>
+    </div>
+    <div class="container footer-bottom">© @DateTime.UtcNow.Year Nexora Technologies. All rights reserved.</div>
+</footer>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

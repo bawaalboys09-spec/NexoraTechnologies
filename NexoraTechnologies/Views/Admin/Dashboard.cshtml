@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+<section class="dashboard-shell"><div class="container py-5">
+    <div class="dashboard-heading"><div><span class="eyebrow dark-eyebrow">Administration</span><h1>Admin dashboard</h1><p class="text-secondary">Review leads and monitor project activity.</p></div><a class="btn btn-primary" asp-controller="Admin" asp-action="Enquiries">Manage enquiries</a></div>
+    <div class="row g-3 mt-2">
+        <div class="col-6 col-lg-3"><div class="stat-card"><span>Total enquiries</span><strong>@ViewBag.TotalEnquiries</strong><i class="bi bi-inbox"></i></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-card"><span>New enquiries</span><strong>@ViewBag.NewEnquiries</strong><i class="bi bi-envelope-exclamation"></i></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-card"><span>Client projects</span><strong>@ViewBag.TotalProjects</strong><i class="bi bi-kanban"></i></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-card"><span>Open tickets</span><strong>@ViewBag.OpenTickets</strong><i class="bi bi-life-preserver"></i></div></div>
+    </div>
+    <div class="table-card mt-4"><div class="table-card-heading"><h2>Recent enquiries</h2><a asp-controller="Admin" asp-action="Enquiries">View all</a></div>
+    <div class="table-responsive"><table class="table align-middle mb-0"><thead><tr><th>Name</th><th>Service</th><th>Date</th><th>Status</th></tr></thead><tbody>
+    @foreach (Enquiry item in ViewBag.RecentEnquiries) { <tr><td><strong>@item.Name</strong><div class="small text-secondary">@item.Email</div></td><td>@item.Service</td><td>@item.CreatedAt.ToLocalTime().ToString("dd MMM yyyy")</td><td><span class="status-pill">@item.Status</span></td></tr> }
+    </tbody></table></div></div>
+    <div class="row g-3 mt-2"><div class="col-md-4"><a class="quick-link" asp-controller="Admin" asp-action="Projects"><i class="bi bi-kanban"></i><span><strong>Client projects</strong><small>Review current projects</small></span><i class="bi bi-arrow-up-right ms-auto"></i></a></div><div class="col-md-4"><a class="quick-link" asp-controller="Admin" asp-action="Tickets"><i class="bi bi-life-preserver"></i><span><strong>Support tickets</strong><small>Review client requests</small></span><i class="bi bi-arrow-up-right ms-auto"></i></a></div><div class="col-md-4"><a class="quick-link" asp-area="Identity" asp-page="/Account/Register"><i class="bi bi-person-plus"></i><span><strong>Create account</strong><small>Register user, then assign role securely</small></span><i class="bi bi-arrow-up-right ms-auto"></i></a></div></div>
+</div></section>

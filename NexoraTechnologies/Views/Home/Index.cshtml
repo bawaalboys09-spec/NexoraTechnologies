@@ -1,0 +1,56 @@
+@model IReadOnlyList<ServiceItem>
+@{
+    ViewData["Title"] = "Digital Solutions for Growing Businesses";
+    ViewData["MetaDescription"] = "Nexora Technologies builds websites, custom software, mobile applications, ERP systems and AI-enabled workflows.";
+}
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-copy">
+            <div class="eyebrow"><span class="status-dot"></span> DIGITAL PRODUCTS. BUILT WITH PURPOSE.</div>
+            <h1>Turn your ideas into <span class="text-gradient">digital impact.</span></h1>
+            <p class="hero-lead">We design and build websites, software, mobile apps, ERP systems and practical AI solutions that help your business move forward.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" asp-controller="Contact" asp-action="Index">Discuss your project <span aria-hidden="true">↗</span></a>
+                <a class="button button-ghost" asp-controller="Services" asp-action="Index">Explore services</a>
+            </div>
+            <div class="hero-note"><span class="mini-check">✓</span> Clear communication · Thoughtful engineering · Ongoing support</div>
+        </div>
+        <div class="hero-art" aria-label="Illustration representing connected digital products">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="glow"></div>
+            <div class="core-card"><div class="core-symbol">N<span>.</span></div><div class="core-label">BUILD WHAT'S NEXT</div><div class="core-line"></div><div class="core-caption">Ideas → Products → Progress</div></div>
+            <div class="float-card float-top"><span class="float-icon">⌘</span><span><strong>Custom software</strong><small>Built around your workflow</small></span></div>
+            <div class="float-card float-bottom"><span class="float-icon blue">✦</span><span><strong>Smarter systems</strong><small>Connected. Scalable. Useful.</small></span></div>
+            <div class="art-chip chip-left">WEB</div><div class="art-chip chip-right">AI + ERP</div>
+        </div>
+    </div>
+</section>
+<section class="trust-strip"><div class="container trust-items"><span>WEB DEVELOPMENT</span><i></i><span>SOFTWARE</span><i></i><span>MOBILE APPS</span><i></i><span>ERP SOLUTIONS</span><i></i><span>AI & AUTOMATION</span></div></section>
+<section class="section">
+    <div class="container">
+        <div class="section-heading"><div><div class="eyebrow">WHAT WE DO</div><h2>Technology that solves <span class="text-gradient">real problems.</span></h2></div><a class="text-link" asp-controller="Services" asp-action="Index">All services <span>→</span></a></div>
+        <div class="service-grid">
+        @foreach (var service in Model)
+        {
+            <a class="service-card" asp-controller="Services" asp-action="Details" asp-route-slug="@service.Slug">
+                <span class="service-icon">@switch(service.IconName){case "globe":{<text>◎</text>break;}case "smartphone":{<text>▯</text>break;}case "layers":{<text>▤</text>break;}case "sparkles":{<text>✦</text>break;}case "shield-check":{<text>◇</text>break;}default:{<text>⌘</text>break;}}</span>
+                <h3>@service.Title</h3><p>@service.Summary</p><span class="card-arrow">↗</span>
+            </a>
+        }
+        </div>
+    </div>
+</section>
+<section class="section section-soft">
+    <div class="container split-section">
+        <div><div class="eyebrow">A CLEARER WAY TO BUILD</div><h2>From first conversation to <span class="text-gradient">long-term growth.</span></h2><p class="body-copy">Good technology starts with understanding your goal. We keep the process transparent, practical and focused on the people who will use the product.</p><a class="button button-primary" asp-controller="Home" asp-action="About">Meet Nexora</a></div>
+        <div class="process-list">
+            <div class="process-item"><span>01</span><div><h3>Discover</h3><p>Understand the problem, users and desired outcome.</p></div></div>
+            <div class="process-item"><span>02</span><div><h3>Plan & design</h3><p>Agree on scope, user journeys and a realistic roadmap.</p></div></div>
+            <div class="process-item"><span>03</span><div><h3>Build & test</h3><p>Develop in clear steps and check quality throughout.</p></div></div>
+            <div class="process-item"><span>04</span><div><h3>Launch & support</h3><p>Deploy carefully and help the product keep improving.</p></div></div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container cta-panel"><div><div class="eyebrow">HAVE A PROJECT IN MIND?</div><h2>Let's build something <span class="text-gradient">that matters.</span></h2><p>Tell us what you're trying to achieve. We'll take it from there.</p></div><a class="button button-light" asp-controller="Contact" asp-action="Index">Start a conversation ↗</a></div>
+</section>

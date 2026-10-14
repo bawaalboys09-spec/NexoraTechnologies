@@ -1,0 +1,24 @@
+@model Enquiry
+@{
+    ViewData["Title"] = "Contact";
+}
+<section class="page-hero"><div class="container"><span class="eyebrow">Contact Nexora</span><h1>Tell us what you’re <span class="text-gradient">building.</span></h1><p>Share a few details and start a conversation with our team.</p></div></section>
+<section class="section-pad"><div class="container"><div class="row g-5"><div class="col-lg-5"><h2>Let’s talk about your goals.</h2><p class="text-secondary">Use the form to describe your project, the problem you want to solve, or the support you need.</p><div class="contact-point"><i class="bi bi-chat-square-text"></i><div><strong>Project enquiries</strong><span>Websites, software, apps, ERP, AI, and support.</span></div></div><div class="contact-point"><i class="bi bi-shield-check"></i><div><strong>Privacy-conscious</strong><span>Only provide information needed to discuss your enquiry.</span></div></div><div class="notice-box mt-4">Add your verified business email, phone, and address before publishing the site.</div></div>
+<div class="col-lg-7"><div class="form-card"><h2>Project enquiry</h2><p class="text-secondary small">Fields marked * are required.</p><form asp-action="Contact" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+    <div class="row g-3">
+        <div class="col-md-6"><label asp-for="Name" class="form-label">Full name *</label><input asp-for="Name" class="form-control" autocomplete="name" /><span asp-validation-for="Name" class="text-danger small"></span></div>
+        <div class="col-md-6"><label asp-for="Email" class="form-label">Email *</label><input asp-for="Email" class="form-control" autocomplete="email" /><span asp-validation-for="Email" class="text-danger small"></span></div>
+        <div class="col-md-6"><label asp-for="Phone" class="form-label">Phone</label><input asp-for="Phone" class="form-control" autocomplete="tel" /><span asp-validation-for="Phone" class="text-danger small"></span></div>
+        <div class="col-md-6"><label asp-for="Company" class="form-label">Company / organization</label><input asp-for="Company" class="form-control" autocomplete="organization" /></div>
+        <div class="col-md-6"><label asp-for="Service" class="form-label">Service needed *</label><select asp-for="Service" class="form-select"><option value="">Choose a service</option><option>Website Development</option><option>Software Development</option><option>Mobile App Development</option><option>ERP & Business Systems</option><option>AI & Automation</option><option>IT Support & Maintenance</option><option>Other</option></select><span asp-validation-for="Service" class="text-danger small"></span></div>
+        <div class="col-md-6"><label asp-for="BudgetRange" class="form-label">Estimated budget</label><select asp-for="BudgetRange" class="form-select"><option value="">Choose (optional)</option><option>Under ₹25,000</option><option>₹25,000–₹1,00,000</option><option>₹1,00,000–₹5,00,000</option><option>₹5,00,000+</option><option>Not sure yet</option></select></div>
+        <div class="col-12"><label asp-for="Timeline" class="form-label">Preferred timeline</label><select asp-for="Timeline" class="form-select"><option value="">Choose (optional)</option><option>As soon as possible</option><option>Within 2–4 weeks</option><option>Within 1–3 months</option><option>Flexible</option></select></div>
+        <div class="col-12"><label asp-for="Message" class="form-label">Project details *</label><textarea asp-for="Message" class="form-control" rows="5" placeholder="What would you like to build or improve?"></textarea><span asp-validation-for="Message" class="text-danger small"></span></div>
+        <div class="col-12"><div class="form-check"><input asp-for="PrivacyAcknowledged" class="form-check-input" /><label asp-for="PrivacyAcknowledged" class="form-check-label small">I understand Nexora Technologies will use these details to respond to my enquiry. Publish a full Privacy Policy before launch.</label><span asp-validation-for="PrivacyAcknowledged" class="text-danger small d-block"></span></div></div>
+        <div class="col-12"><button type="submit" class="btn btn-primary btn-lg w-100">Submit enquiry <i class="bi bi-arrow-right ms-1"></i></button></div>
+    </div>
+</form></div></div></div></div></section>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

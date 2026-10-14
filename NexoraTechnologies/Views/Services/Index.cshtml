@@ -1,0 +1,13 @@
+@model IReadOnlyList<ServiceItem>
+@{
+    ViewData["Title"] = "Services";
+    ViewData["MetaDescription"] = "Explore website development, software, mobile app, ERP, AI automation and IT support services from Nexora Technologies.";
+}
+<section class="page-hero"><div class="container"><div class="eyebrow">OUR SERVICES</div><h1>Digital capability for your <span class="text-gradient">next step.</span></h1><p>Choose a service or combine the right capabilities to solve a wider business challenge.</p></div></section>
+<section class="section"><div class="container service-grid">
+@foreach (var service in Model)
+{
+    <a class="service-card service-card-large" asp-controller="Services" asp-action="Details" asp-route-slug="@service.Slug"><span class="service-icon">✦</span><h3>@service.Title</h3><p>@service.Summary</p><span class="text-link">Explore service →</span></a>
+}
+</div></section>
+<section class="section section-soft"><div class="container cta-panel"><div><h2>Not sure where to start?</h2><p>Tell us the outcome you need and we'll help define a sensible first step.</p></div><a class="button button-light" asp-controller="Contact" asp-action="Index">Discuss your project ↗</a></div></section>

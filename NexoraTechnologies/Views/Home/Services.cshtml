@@ -1,0 +1,6 @@
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Services";
+}
+<section class="page-hero"><div class="container"><span class="eyebrow">Our services</span><h1>Digital services for <span class="text-gradient">real business needs.</span></h1><p>Choose the support you need today, with room to grow tomorrow.</p></div></section>
+<section class="section-pad"><div class="container"><div class="row g-4">@foreach (var service in Model.Services) { <div class="col-md-6 col-lg-4"><article class="service-card h-100"><div class="service-icon"><i class="bi @service.Icon"></i></div><h3>@service.Title</h3><p>@service.Description</p><a class="text-link" asp-controller="Home" asp-action="Contact">Request a consultation <i class="bi bi-arrow-right"></i></a></article></div> }</div><div class="cta-inline mt-5"><div><h2>Not sure what you need?</h2><p>Describe the problem and we can discuss an appropriate approach.</p></div><a class="btn btn-primary" asp-controller="Home" asp-action="Contact">Talk to our team</a></div></div></section>

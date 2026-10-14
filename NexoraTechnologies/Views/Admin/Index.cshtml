@@ -1,0 +1,10 @@
+@model IReadOnlyList<ContactEnquiry>
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+<section class="dashboard-section"><div class="container"><div class="dashboard-heading"><div><div class="eyebrow">NEXORA WORKSPACE</div><h1>Admin dashboard</h1><p class="muted">A quick view of incoming project enquiries.</p></div><a class="button button-primary" asp-action="Enquiries">Manage enquiries ↗</a></div>
+<div class="stats-grid"><article class="stat-card"><span>Total enquiries</span><strong>@ViewBag.EnquiryCount</strong><small>All received enquiries</small></article><article class="stat-card"><span>New enquiries</span><strong>@ViewBag.NewEnquiryCount</strong><small>Awaiting review</small></article><article class="stat-card"><span>Client accounts</span><strong>@ViewBag.ClientCount</strong><small>Registered clients</small></article><article class="stat-card"><span>Services</span><strong>@ViewBag.ServiceCount</strong><small>Available service entries</small></article></div>
+<div class="table-card"><div class="table-heading"><h2>Latest enquiries</h2><a class="text-link" asp-action="Enquiries">View all →</a></div><div class="table-scroll"><table><thead><tr><th>Name</th><th>Service</th><th>Received</th><th>Status</th></tr></thead><tbody>
+@if (!Model.Any()) { <tr><td colspan="4" class="empty-state">No enquiries have been received yet.</td></tr> }
+@foreach (var item in Model) { <tr><td><strong>@item.Name</strong><small>@item.Email</small></td><td>@item.Service</td><td>@item.CreatedAtUtc.ToLocalTime().ToString("dd MMM yyyy, hh:mm tt")</td><td><span class="status-pill status-@item.Status.ToLowerInvariant()">@item.Status</span></td></tr> }
+</tbody></table></div></div></div></section>

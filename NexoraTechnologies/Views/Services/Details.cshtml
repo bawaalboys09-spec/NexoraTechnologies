@@ -1,0 +1,7 @@
+@model ServiceItem
+@{
+    ViewData["Title"] = Model.Title;
+    ViewData["MetaDescription"] = Model.Summary;
+}
+<section class="page-hero"><div class="container"><a class="back-link" asp-action="Index">← All services</a><div class="eyebrow">NEXORA SERVICES</div><h1>@Model.Title</h1><p>@Model.Summary</p><a class="button button-primary" asp-controller="Contact" asp-action="Index">Discuss this service ↗</a></div></section>
+<section class="section"><div class="container content-narrow"><h2>A practical solution, built around your needs.</h2><p>@Model.Description</p><div class="value-grid"><article class="value-card"><h3>Understand</h3><p>Clarify the goals, users, constraints and success measures.</p></article><article class="value-card"><h3>Build</h3><p>Agree the scope, create the solution and test the important journeys.</p></article><article class="value-card"><h3>Improve</h3><p>Plan launch, maintenance and future improvements from the start.</p></article></div><a class="button button-primary" asp-controller="Contact" asp-action="Index">Request a consultation</a></div></section>

@@ -1,0 +1,14 @@
+@model IReadOnlyList<ClientProject>
+@{
+    ViewData["Title"] = "Client Portal";
+}
+<section class="dashboard-section"><div class="container"><div class="dashboard-heading"><div><div class="eyebrow">YOUR WORKSPACE</div><h1>Client portal</h1><p class="muted">View the project updates shared with your account.</p></div><a class="button button-primary" asp-controller="Contact" asp-action="Index">Discuss a new project ↗</a></div>
+@if (!Model.Any())
+{
+    <div class="empty-panel"><div class="empty-icon">◇</div><h2>No projects linked yet</h2><p>When the Nexora team creates a project and links it to your account, its status and progress will appear here.</p><a class="button button-ghost" asp-controller="Contact" asp-action="Index">Contact the team</a></div>
+}
+else
+{
+    <div class="project-grid">@foreach (var project in Model) { <article class="project-card"><div class="project-top"><span class="status-pill">@project.Status</span><span class="muted small">Created @project.CreatedAtUtc.ToLocalTime().ToString("dd MMM yyyy")</span></div><h2>@project.Title</h2><p>@(project.Description ?? "No project description has been added yet.")</p><div class="progress-label"><span>Progress</span><strong>@project.ProgressPercent%</strong></div><div class="progress-track"><span style="width:@project.ProgressPercent%"></span></div>@if (project.TargetDateUtc.HasValue) { <p class="muted small">Target date: @project.TargetDateUtc.Value.ToLocalTime().ToString("dd MMM yyyy")</p> }</article>}</div>
+}
+</div></section>

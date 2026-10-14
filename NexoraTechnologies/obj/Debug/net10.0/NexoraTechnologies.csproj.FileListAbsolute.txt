@@ -1,0 +1,9 @@
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\NexoraTechnologies.csproj.AssemblyReference.cache
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\NexoraTechnologies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\NexoraTechnologies.AssemblyInfoInputs.cache
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\NexoraTechnologies.AssemblyInfo.cs
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\NexoraTechnologies.csproj.CoreCompileInputs.cache
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\NexoraTechnologies.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\NexoraTechnologies.RazorAssemblyInfo.cache
+C:\Users\abhim\OneDrive\Desktop\All software file\1 - Nexora Technologies\1. Zeep files\1- file\NexoraTechnologies_ASPNETCore_Starter\NexoraTechnologies\obj\Debug\net10.0\NexoraTechnologies.RazorAssemblyInfo.cs
